@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modal window</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <section class="main">
+    <h1 class="title">Atelier No. 9</h1>
+    <p class="descr">Частные презентации модных коллекций и лимитированных капсульных коллекций по предварительной записи.</p>
+    <button class="button" type="button">Записаться на примерку</button>
+  </section>
+  <div class="modal is-active">
+    <div class="modal-card">
+      <button class="close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 5L5 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M5 5L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Close button
+      </button>
+      <span class="modal-type">Private Event</span>
+      <h2 class="modal-title">Подтвердить бронирование?</h2>
+      <p class="modal-descr">Место будет закреплено на 20 минут. После подтверждения приглашение и QR-пропуск появятся в личном кабинете.</p>
+      <div class="modal-info">
+        <div class="modal-text">
+          <h3 class="modal-subtitle">Evening Preview</h3>
+          <time datetime="2026-28-07T19:30:00" class="modal-time">28 июля · 19:30</time>
+        </div>
+        <div class="modal-info__guest">2 гостя</div>
+      </div>
+      <div class="button-group">
+        <button class="button-close" type="button">Позже</button>
+        <button class="button-approve" type="button">Подтвердить</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
